@@ -15,3 +15,18 @@ Outline:
  8. Serial tasks should be executed on the same core.
  9. LabVIEW stuffs - blackbox their system library calls to get more utilities?
 
+### [Introduction to FPGA Interface C API](http://www.ni.com/product-documentation/9036/en/)
+Outline:
+
+NI provides library for FPGA access using C. However, FPGA is programmed using LabVIEW.
+![NIGraph1](http://www.ni.com/cms/images/devzone/tut/c_fpga_interface_diagram_dz.png)
+
+NI maintains their proprietary C IDE with full access to their system libraries: [LabWindows /CVI](http://www.ni.com/lwcvi/). GCC is also supported. No knowledge about clang :(
+
+![NIGraph2](http://www.ni.com/cms/images/devzone/tut/Introduction_to_FPGA_Interface_C_API_Software_Options.png)
+
+Note that NI might not provide real-time functionalities for C/C++.
+
+ - GCC-neabi for x64 Linux: [oecore-x86_64-x86_64-toolchain-2.0.sh](http://lumen.ni.com/nicif/US/GB_NIDU/content.xhtml?du=http://www.ni.com/download/labview-real-time-module-2014/4959/en/)
+ - http://www.ni.com/tutorial/14625/en/ provides build flags for gcc cross-compiling.
+ - 
